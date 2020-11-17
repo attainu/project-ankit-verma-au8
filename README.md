@@ -10,6 +10,6 @@ After creating the parking lot, the user can park the car, leave the car and fin
 #Park a car: ‘park KA-01-HH-1234 White’
 #Leave a car: ‘leave 4 ‘
 #To check status of the parking lot: ‘status’
-#To print registration of all cars of a particular colour: ‘registration_numbers_for_cars_with_colour White’
-#To print position of all cars of a particular colour: ‘slot_numbers_for_cars_with_colour White’
+#To print registrations of all cars of a particular colour: ‘registration_numbers_for_cars_with_colour White’
+#To print positions of all cars of a particular colour: ‘slot_numbers_for_cars_with_colour White’
 #Slot number of a car by registration number: ‘slot_number_for_registration_number MH-04-AY-1111’
