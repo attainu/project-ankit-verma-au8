@@ -1,5 +1,5 @@
-Project: Parking-Lot
-Name: Ankit Kumar Verma
+#Project: Parking-Lot
+#Name: Ankit Kumar Verma
 
 About the Project:
 In this project, I created a parking lot in python. It runs on a command prompt based shell. It facilitates the user to create a parking lot with capacity N.
