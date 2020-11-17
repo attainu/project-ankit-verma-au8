@@ -20,13 +20,22 @@ class Parkinglot:
         print("Created Parking lot of Capacity", self.noofslot)
 
     def park(self, vehicle):
-        for i in range(len(self.slots)):
-            if self.slots[i] == 0:
-                self.slots[i] = vehicle
-                print("Allocated slot number", i+1)
-                break
+        if len(vehicle.reg_no) != 13:
+            print("Not a valid reg.no, Please enter a valid reg. no.")
         else:
-            print("No slots avialable")
+            for i in range(len(self.slots)):
+                if self.slots[i] == 0:
+                    self.slots[i] = vehicle
+                    print("Allocated slot number", i+1)
+                    break
+            else:
+                print("Sorry! No slots avialable.")
+                print("If need more slots, use command: 'add_slot N'")
+
+    def addslot(self, N):
+        for i in range(N):
+            self.slots.append(0)
+        print(N, "slots added in parking lot.")
 
     def leave(self, slotnumber):
         self.slots[slotnumber - 1] = 0
@@ -108,6 +117,10 @@ def main():
         elif "leave" in input_cmd:
             cmd, slot_no = input_cmd.split()
             parking_lot.leave(int(slot_no))
+        elif "add_slot" in input_cmd:
+            cmd, noofslots_str = input_cmd.split()
+            noofslots = int(noofslots_str)
+            parking_lot.addslot(noofslots)
         elif "registration_numbers_for_cars_with_colour" in input_cmd:
             cmd, colour = input_cmd.split()
             parking_lot.find_reg_no_by_colour(colour)
