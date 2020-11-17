@@ -143,7 +143,7 @@ if __name__ == "__main__":
         main()
     # if file name is provided in the provided
     elif len(sys.argv) == 2:
-        with open('command.txt', 'r') as f:
+        with open(sys.argv[1], 'r') as f:
             for line in f:
                 input_cmd = line
                 if "create_parking_lot" in input_cmd:
