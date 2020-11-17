@@ -6,8 +6,12 @@ In this project, I created a parking lot in python. It runs on a command prompt 
 After creating the parking lot, the user can park the car, leave the car and find a car by registration number. In addition to this, it provides you the facility to check the status of parking lot at any time and also you can locate all cars of a particular colour by their slots and registration number.
 
 ### Commands for each operation:
-#### Create a parking Lot: ‘create_parking_lot 6’
-#### Park a car: ‘park KA-01-HH-1234 White’
+#### Create a parking Lot: ‘create_parking_lot N1 N2’
+##### N1 is the number of slots for taxi cars.
+##### N2 is the number of slots for non taxi cars.
+#### Park a car:
+##### For taxi cars: 'park KA-01-HH-1234 White taxi'
+##### For non taxi cars: 'park KA-01-HH-1234 White nontaxi'
 #### Leave a car: ‘leave 4 ‘
 #### To check status of the parking lot: ‘status’
 #### To print registrations of all cars of a particular colour: ‘registration_numbers_for_cars_with_colour White’
